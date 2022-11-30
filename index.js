@@ -5,8 +5,9 @@ const record = [
     
 ]
 function superbowlWin(record) {
-    const res = record.find(record => record.result === "W")
-}
-if (res === undefined) {
-    console.log("W")
+    for(let item of record){
+        if(item.result == "W"){
+            return "2015"
+        }
+    }
 }
